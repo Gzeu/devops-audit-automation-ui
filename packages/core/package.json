@@ -1,0 +1,22 @@
+{
+  "name": "@audit/core",
+  "version": "1.0.0",
+  "description": "Core audit scripts and analyzers",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "quick-check": "./scripts/quick-health-check.sh",
+    "analyze": "python3 scripts/devops-analyzer.py",
+    "full-audit": "./scripts/quality-audit-script.sh",
+    "typecheck": "echo 'No TypeScript in core package'"
+  },
+  "files": [
+    "scripts/**/*",
+    "dist/**/*"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./scripts/*": "./scripts/*"
+  }
+}
