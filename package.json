@@ -1,0 +1,28 @@
+{
+  "name": "devops-audit-automation-ui",
+  "private": true,
+  "version": "1.0.0",
+  "description": "DevOps Audit Automation with modern UI - Monorepo Architecture",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean",
+    "audit:quick": "turbo run audit:quick",
+    "audit:full": "turbo run audit:full",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "turbo": "^1.10.16",
+    "typescript": "^5.2.2",
+    "eslint": "^8.52.0",
+    "prettier": "^3.0.3"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
