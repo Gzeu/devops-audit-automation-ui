@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+coverage/
+.next/
+.cache/
+public/build/
+*.md
+*.json
+*.yml
+*.yaml
